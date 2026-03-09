@@ -1,0 +1,199 @@
+/* GLOBAL */
+
+body{
+font-family: 'Segoe UI', Arial, sans-serif;
+margin:0;
+background:#f4f6fb;
+color:#333;
+}
+
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+background:#002147;
+color:white;
+}
+
+.logo{
+margin:0;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ff7a18;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+color:white;
+
+background:
+linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("../images/campus.jpg");
+
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+
+/* BUTTON */
+
+.btn{
+background:#ff7a18;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:5px;
+}
+
+
+/* COURSES SECTION */
+
+.courses{
+text-align:center;
+padding:60px 40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+margin-top:30px;
+}
+
+
+.card{
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:6px;
+margin-bottom:10px;
+}
+
+
+/* PLACEMENT SECTION */
+
+.placements{
+text-align:center;
+padding:60px 40px;
+background:#002147;
+color:white;
+}
+
+.stat{
+background:white;
+color:#002147;
+padding:25px;
+border-radius:8px;
+font-weight:600;
+}
+
+
+/* RECRUITERS */
+
+.recruiters{
+text-align:center;
+padding:60px 40px;
+}
+
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+padding:25px;
+background:#111;
+color:white;
+font-size:14px;
+}
+
+.footer p{
+margin:5px 0;
+}
+
+/* FORM PAGE */
+
+.form-section{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:60px 20px;
+}
+
+.form-section h2{
+margin-bottom:25px;
+}
+
+
+/* FORM BOX */
+
+.form-box{
+background:white;
+padding:35px;
+width:380px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+display:flex;
+flex-direction:column;
+}
+
+
+/* LABEL */
+
+.form-box label{
+margin-top:12px;
+font-weight:500;
+}
+
+
+/* INPUT */
+
+.form-box input{
+padding:10px;
+margin-top:6px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+
+/* BUTTON */
+
+.form-box .btn{
+margin-top:20px;
+text-align:center;
+border:none;
+cursor:pointer;
+}

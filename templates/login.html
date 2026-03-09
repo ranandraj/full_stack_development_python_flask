@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Student Login{% endblock %}
+
+{% block content %}
+
+<section class="form-section">
+
+<h2>Student Login</h2>
+
+<form class="form-box" method="POST">
+
+<label>Email</label>
+
+<input
+type="email"
+name="email"
+required
+placeholder="Enter your email"
+title="Enter a valid email address">
+
+<label>Password</label>
+
+<input
+type="password"
+name="password"
+required
+minlength="6"
+placeholder="Enter your password"
+title="Password must contain at least 6 characters">
+
+<button class="btn">Login</button>
+
+</form>
+
+</section>
+
+{% endblock %}

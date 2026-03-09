@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Student Registration{% endblock %}
+
+{% block content %}
+
+<section class="form-section">
+
+<h2>Create Student Account</h2>
+
+<form class="form-box" method="POST">
+
+<label>Full Name</label>
+<input type="text"
+name="name"
+required
+minlength="3"
+placeholder="Enter your full name">
+
+<label>Email</label>
+<input type="email"
+name="email"
+required
+placeholder="Enter your email">
+
+<label>Password</label>
+<input type="password"
+name="password"
+required
+minlength="6"
+placeholder="Minimum 6 characters">
+
+<label>Phone Number</label>
+<input type="tel"
+name="phone"
+pattern="[0-9]{10}"
+required
+placeholder="10 digit mobile number" title="Phone number must be exactly 10 digits">
+
+<button class="btn">Create Account</button>
+
+</form>
+
+</section>
+
+{% endblock %}
