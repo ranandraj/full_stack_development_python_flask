@@ -1,42 +1,27 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 <title>{% block title %}Admission Portal{% endblock %}</title>
-
 <link rel="stylesheet"
 href="{{ url_for('static', filename='css/style.css') }}">
-
 </head>
-
 <body>
-
 <header class="header">
-
 <h2 class="logo">Adhiyamaan College of Engineering</h2>
-
 <nav>
 <a href="/">Home</a>
 <a href="/register">Apply</a>
 <a href="/login">Student Login</a>
 <a href="/admin_login">Admin</a>
 </nav>
-
 </header>
 
-
 <main>
-
 {% block content %}
-
 {% endblock %}
-
 </main>
 
-
 <footer class="footer">
-
 <p>
 Adhiyamaan College of Engineering  
 </p>
@@ -45,9 +30,7 @@ Adhiyamaan College of Engineering
 Dr. MGR Nagar, Hosur, Krishnagiri District  
 Tamil Nadu – 635109, India
 </p>
-
 <p>© 2026 Admission Portal</p>
-
 </footer>
 
 </body>

@@ -1,98 +1,64 @@
 {% extends "base.html" %}
-
 {% block title %}Home | Admission Portal{% endblock %}
-
 {% block content %}
-
 <section class="hero">
-
 <h1>B.Tech Admissions 2026</h1>
-
 <p>
 Welcome to Adhiyamaan College of Engineering, Hosur.
 Apply for undergraduate engineering programs.
 </p>
-
 <a href="/register" class="btn">Apply Now</a>
-
 </section>
-
-
 <section class="courses">
-
 <h2>Engineering Courses</h2>
-
 <div class="grid">
-
 <div class="card">
 <img src="{{ url_for('static', filename='images/cse.jpg') }}">
 <p>Computer Science</p>
 </div>
-
 <div class="card">
 <img src="{{ url_for('static', filename='images/mech.jpg') }}">
 <p>Mechanical Engineering</p>
 </div>
-
 <div class="card">
 <img src="{{ url_for('static', filename='images/electrical.jpg') }}">
 <p>Electrical Engineering</p>
 </div>
-
 <div class="card">
 <img src="{{ url_for('static', filename='images/civil.jpg') }}">
 <p>Civil Engineering</p>
 </div>
-
 </div>
-
 </section>
 
-
 <section class="placements">
-
 <h2>Campus Placement Highlights</h2>
-
 <div class="grid">
-
 <div class="stat">
 <h3>90%+</h3>
 <p>Placement Rate</p>
 </div>
-
 <div class="stat">
 <h3>₹12 LPA</h3>
 <p>Highest Package</p>
 </div>
-
 <div class="stat">
 <h3>₹5 LPA</h3>
 <p>Average Package</p>
 </div>
-
 <div class="stat">
 <h3>120+</h3>
 <p>Recruiting Companies</p>
 </div>
-
 </div>
-
 </section>
-
-
 <section class="recruiters">
-
 <h2>Top Recruiters</h2>
-
 <div class="grid">
-
 <div class="card">TCS</div>
 <div class="card">Infosys</div>
 <div class="card">Wipro</div>
 <div class="card">Accenture</div>
-
 </div>
-
 </section>
-
 {% endblock %}
