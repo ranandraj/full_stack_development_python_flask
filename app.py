@@ -8,7 +8,9 @@ db = pymysql.connect(
 )
 
 cursor = db.cursor()
+
 app = Flask(__name__)
+app.secret_key = "admission_portal_secret_key"
 
 @app.route("/")
 def home():
@@ -39,9 +41,31 @@ def register():
 
     return render_template("register.html")
 
-@app.route("/login")
+@app.route("/login", methods=["GET", "POST"])
 def login():
+
+    if request.method == "POST":
+
+        email = request.form["email"]
+        password = request.form["password"]
+
+        query = "SELECT * FROM students WHERE email=%s AND password=%s"
+        cursor.execute(query, (email, password))
+
+        user = cursor.fetchone()
+
+        if user:
+            session["student_id"] = user[0]
+            return redirect("/dashboard")
+        else:
+            return "Invalid Email or Password"
+
     return render_template("login.html")
+
+@app.route("/dashboard")
+def dashboard():
+    return "Logged in successfully!"
+
 
 @app.route("/admin_login")
 def admin_login():
