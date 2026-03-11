@@ -1,9 +1,9 @@
-from flask import Flask, render_template, request, redirect
-import mysql.connector
-db = mysql.connector.connect(
+from flask import Flask, render_template, request, redirect, session
+import pymysql
+db = pymysql.connect(
     host="localhost",
     user="root",
-    password="your_password",
+    password="root123",
     database="admission_portal_db"
 )
 
